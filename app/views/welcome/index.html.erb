@@ -1,0 +1,31 @@
+<div class="wrapper wrapper_padding clearfix">
+<div class="col-1 about homepage_content">
+	<h2>About</h2>
+	<hr>
+	<p>
+		As a <a href="">photographer</a>, I see and understand the world visually. The more I began to observe how people interacted with their surroundings, the more curious I became in user centered design. This led me into a career as a ux designer.
+	</p>	
+	<p>
+		I quickly grew to love designing the entire experience from the ground up, from user flows and interactive prototypes to a finished web interface. When I'm not making stuff for the web or taking photos, I co-organize a meetup group called <a href="">ChicagoRuby</a>.
+	</p>
+</div>
+<div class="col-2 homepage_content">
+	<h2>Stuff I've Written</h2>
+	<hr>
+	<% @posts.each do |post| %>
+	<h3><a href="#"><%= link_to post.title, post %></a></h3>
+	<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+	<% end %>
+</div>
+<div class="col-3 homepage_content">
+<h2>Stuff I've Made</h2>
+	<hr>
+	<h3><a href="#">CrashPad</a></h3>
+	<p class="date">Saturday June 20th</p>
+	<h3><a href="#">Archive</a></h3>
+	<p class="date">Saturday June 20th</p>
+	<h3><a href="#">CentUp</a></h3>
+	<p class="date">Saturday June 20th</p>	
+</div>
+</div>
+
